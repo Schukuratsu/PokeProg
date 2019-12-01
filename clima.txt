@@ -1,0 +1,7 @@
+sunny fire grass ground
+partly_cloudy normal rock null
+cloudy fairy fighting poison
+rain water electric bug
+snow ice steel null
+fog dark ghost null
+windy dragon flying psychic
