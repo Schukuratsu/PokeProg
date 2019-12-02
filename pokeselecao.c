@@ -22,13 +22,13 @@ void listaPokemon(pokemon_struct *pokemon, tipo_struct *tipo){
 
 int lePokemonId(pokemon_struct *pokemon, tipo_struct *tipo){
     int id = -1;
+    listaPokemon(pokemon, tipo);
     while(id < 1 || id > QTD_POKEMON){
-        printf("\nSelecione um pokemon pelo seu ID da pokedex (0 para listar): ");
+        printf("\nSelecione um pokemon pelo seu ID da pokedex: ");
         scanf("%d", &id);
-        if(id == 0) listaPokemon(pokemon, tipo);
     }
     id = id - 1;
-    printf("\nPokemon selecionado: %s\n", pokemon[id].nome);
+    printf("\nPokemon selecionado: %s\n\n", pokemon[id].nome);
     return id;
 }
 
@@ -46,25 +46,27 @@ void listaAtaque(ataque_struct *ataque, int qtd, tipo_struct *tipo){
 
 int leAtaqueRapido(ataque_struct *ataque_rapido, tipo_struct *tipo){
     int id = -1;
+    printf("Lista de ataques rapidos:\n");
+    listaAtaque(ataque_rapido, QTD_ATAQUE_RAPIDO, tipo);
     while(id < 1 || id > QTD_ATAQUE_RAPIDO){
-        printf("\nSelecione um ataque rapido pelo seu ID (0 para listar): ");
+        printf("\nSelecione um ataque rapido pelo seu ID: ");
         scanf("%d", &id);
-        if(id == 0) listaAtaque(ataque_rapido, QTD_ATAQUE_RAPIDO, tipo);
     }
     id = id - 1;
-    printf("\nAtaque rapido selecionado: %s\n", ataque_rapido[id].nome);
+    printf("\nAtaque rapido selecionado: %s\n\n", ataque_rapido[id].nome);
     return id;
 }
 
 int leAtaqueCarregado(ataque_struct *ataque_carregado, tipo_struct *tipo){
     int id = -1;
+    printf("Lista de ataques carregados:\n");
+    listaAtaque(ataque_carregado, QTD_ATAQUE_CARREGADO, tipo);
     while(id < 1 || id > QTD_ATAQUE_CARREGADO){
-        printf("\nSelecione um ataque carregado pelo seu ID (0 para listar): ");
+        printf("\nSelecione um ataque carregado pelo seu ID: ");
         scanf("%d", &id);
-        if(id == 0) listaAtaque(ataque_carregado, QTD_ATAQUE_CARREGADO, tipo);
     }
     id = id - 1;
-    printf("\nAtaque carregado selecionado: %s\n", ataque_carregado[id].nome);
+    printf("\nAtaque carregado selecionado: %s\n\n", ataque_carregado[id].nome);
     return id;
 }
 
@@ -77,7 +79,7 @@ float resto(float dividendo, float divisor){
 float leNivel(){
     float nivel = 0.1;
     while(resto(nivel, NIVEL_PASSO) != 0.0 || nivel < NIVEL_MIN || nivel > NIVEL_MAX){
-        printf("\nDigite o nivel do pokemon: ");
+        printf("Digite o nivel do pokemon (de 0 a 40): ");
         scanf("%f", &nivel);
     }
     return nivel;
@@ -87,7 +89,7 @@ float calculaPS(pokemon_selecionado_struct *pokemon){
     float ps;
     ps = pokemon->base->stamina * 2 * pokemon->nivel / 100;
     ps += pokemon->nivel + 10;
-    printf("\nOs pontos de saude do pokemon selecionado sao: %.2f\n", ps);
+    printf("\nOs pontos de saude do pokemon selecionado sao: %.2f\n\n", ps);
     pokemon->ps = ps;
 }
 
@@ -108,9 +110,10 @@ float selecionaPokemon(pokemon_selecionado_struct *poke_sel, pokemon_struct *pok
 }
 
 float selecionaPokemons(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][QTD_POKEMON_POR_JOGADOR], pokemon_struct *pokemon, ataque_struct *ataque_rapido, ataque_struct *ataque_carregado, clima_struct *clima, tipo_struct *tipo){
-    for(int jogador = 0; jogador < QTD_JOGADOR; jogador++){
-		for(int sel = 0; sel < QTD_POKEMON_POR_JOGADOR; sel++){
-			selecionaPokemon(&pokemon_selecionado[jogador][sel], pokemon, ataque_rapido, ataque_carregado, clima, tipo);
+    for(int sel = 0; sel < QTD_POKEMON_POR_JOGADOR; sel++){
+        for(int jogador = 0; jogador < QTD_JOGADOR; jogador++){
+			printf("\nJogador %d, escolha seu pokemon %d.\n", jogador + 1, sel + 1);
+            selecionaPokemon(&pokemon_selecionado[jogador][sel], pokemon, ataque_rapido, ataque_carregado, clima, tipo);
 		}
 	}
 }
@@ -129,12 +132,12 @@ void listaClima(clima_struct *clima, tipo_struct *tipo){
 
 int selecionaClima(int *clima_sel, clima_struct *clima, tipo_struct *tipo){
     int id = -1;
+    listaClima(clima, tipo);
     while(id < 1 || id > QTD_CLIMA){
-        printf("\nSelecione um clima pelo seu ID (0 para listar): ");
+        printf("\nSelecione um clima pelo seu ID: ");
         scanf("%d", &id);
-        if(id == 0) listaClima(clima, tipo);
     }
     id = id - 1;
-    printf("\nClima selecionado: %s\n", clima[id].nome);
+    printf("\nClima selecionado: %s\n\n", clima[id].nome);
     *clima_sel = id;
 }
