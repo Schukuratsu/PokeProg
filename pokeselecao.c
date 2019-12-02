@@ -1,12 +1,13 @@
 #include "pokedef.h"
 
 void listaPokemon(pokemon_struct *pokemon, tipo_struct *tipo){
+    const char tipo_null[TAM_STRING] = "null";
     char tipo2[TAM_STRING];
     for(int i = 0; i < QTD_POKEMON; i++){
         if(pokemon[i].tipo2 == -1) 
             strcpy(tipo2,tipo[pokemon[i].tipo2].nome);
         else 
-            strcpy(tipo2, "\0");
+            strcpy(tipo2, tipo_null);
         printf("(%d)\t%s, atk:%.2f, def:%.2f, vel:%.2f, sta:%.2f, tipo1:%s, tipo2:%s\n", 
             i + 1, 
             pokemon[i].nome, 

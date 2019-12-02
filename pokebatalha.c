@@ -201,6 +201,7 @@ void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][Q
         printf("\nTurno do jogador %d - \'%s\' ataca \'%s\'.", jogador + 1, atacante->base->nome, atacado->base->nome);
         ataque_selecionado = menuAtaque(atacante, tipo);
         bloqueado = atacaAdversario(ataque_selecionado, atacante, atacado, tipo, clima, &escudo[jogador2]);
+        escudo[jogador2] -= bloqueado; 
         escreveLog(ataque_selecionado, &pokemon_selecionado[0][pokemon_ativo[0]], &pokemon_selecionado[1][pokemon_ativo[1]], jogador, bloqueado, turno);
         ultimo_jogador = jogador;
         if(jogador) jogador = 0;

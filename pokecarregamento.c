@@ -25,7 +25,8 @@ int carregaTipo(tipo_struct tipo[QTD_TIPO]){
 }
 
 int pegaIdTipo(char tipo_pokemon[TAM_STRING], tipo_struct tipo[QTD_TIPO], int linha, const char nome_arq[TAM_STRING]){
-    if(strcmp(tipo_pokemon, "null") == 0){
+    const char tipo_null[TAM_STRING] = "null";
+    if(strcmp(tipo_pokemon, tipo_null) == 0){
         return -1;
     }
     for(int i = 0; i < QTD_TIPO; i++){
