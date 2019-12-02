@@ -13,16 +13,16 @@
 #define QTD_TIPO 18
 #define QTD_CLIMA 7
 #define TIPOS_POR_CLIMA 3
-#define QTD_ATAQUE_RAPIDO 1 //CHANGEME
-#define QTD_ATAQUE_CARREGADO 1 //CHANGEME
-#define QTD_POKEMON 2 //CHANGEME
+#define QTD_ATAQUE_RAPIDO 30
+#define QTD_ATAQUE_CARREGADO 129
+#define QTD_POKEMON 151
 // configurações do jogo
-#define QTD_POKEMON_POR_JOGADOR 1 //CHANGEME
+#define QTD_POKEMON_POR_JOGADOR 3
 #define QTD_JOGADOR 2
-#define NIVEL_PASSO 0.5 //CHANGEME
+#define QTD_ESCUDO 2
+#define NIVEL_PASSO 0.5
 #define NIVEL_MIN 0
 #define NIVEL_MAX 40
-#define FATOR_ALEATORIO 0.15
 // coisas aleatórias
 #define TAM_STRING 50
 

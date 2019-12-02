@@ -142,10 +142,10 @@ void escreveLogCabecalho(pokemon_selecionado_struct *p_s1, pokemon_selecionado_s
     const char nome_arq[] = "log_batalha.csv";
     FILE *arq = fopen(nome_arq, "w+");
     if (arq != NULL){
-        fprintf(arq,"turno;atacante;ataque;ps(jogador1);ps(jogador2);ps(jogador1);ps(jogador2)\n");
-        printf("turno\tatacante\tataque\tps(jogador1)\tps(jogador2)\tps(jogador1)\tps(jogador2)\n");
-        fprintf(arq;"0;-;-;%.3f;%.3f;%.3f;%.3f\n", p_s1->ps, p_s2->ps, p_s1->energia, p_s2->energia);
-        printf("log: 0\t-\t-\t%.3f\t%.3f\t%.3f\t%.3f\n", p_s1->ps, p_s2->ps, p_s1->energia, p_s2->energia);
+        fprintf(arq,"turno;atacante;ataque;ps(jogador1);ps(jogador2);energia(jogador1);energia(jogador2)\n");
+        printf("\tturno\tatacante\tataque\tps(jogador1)\tps(jogador2)\tps(jogador1)\tps(jogador2)\n");
+        fprintf(arq,"0;-;-;%.3f;%.3f;%.3f;%.3f\n", p_s1->ps, p_s2->ps, p_s1->energia, p_s2->energia);
+        printf("log: \t0\t-\t\t-\t%.3f\t\t%.3f\t\t%.3f\t\t%.3f\n", p_s1->ps, p_s2->ps, p_s1->energia, p_s2->energia);
         fclose(arq);
     }
     else{
@@ -182,7 +182,7 @@ void escreveLog(ataque_struct *ataque_selecionado, pokemon_selecionado_struct *p
 
 void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][QTD_POKEMON_POR_JOGADOR], clima_struct *clima, tipo_struct *tipo){
     int pokemon_ativo[QTD_JOGADOR] = {0, 0};
-    int escudo[QTD_JOGADOR] = {0, 0};
+    int escudo[QTD_JOGADOR] = {QTD_ESCUDO, QTD_ESCUDO};
     ataque_struct *ataque_selecionado;
     pokemon_selecionado_struct *atacante, *atacado;
     int jogador2;
@@ -207,6 +207,7 @@ void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][Q
         else jogador = 1;
         // verifica se pokemon foi nocauteado
         if(atacado->ps <= 0){
+            printf("O pokemon '%s' desmaiou...\n", atacado->base->nome);
             pokemon_ativo[jogador2]++;
             jogador = verificaPrimeiro(&pokemon_selecionado[0][pokemon_ativo[0]],&pokemon_selecionado[1][pokemon_ativo[1]]);
         }

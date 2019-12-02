@@ -7,7 +7,7 @@ void listaPokemon(pokemon_struct *pokemon, tipo_struct *tipo){
             strcpy(tipo2,tipo[pokemon[i].tipo2].nome);
         else 
             strcpy(tipo2, "\0");
-        printf("id:%d\t%s\ta:%.2f\td:%.2f\tv:%.2f\ts:%.2f\tt1:%s\tt2:%s\n", 
+        printf("(%d)\t%s, atk:%.2f, def:%.2f, vel:%.2f, sta:%.2f, tipo1:%s, tipo2:%s\n", 
             i + 1, 
             pokemon[i].nome, 
             pokemon[i].ataque, 
@@ -34,7 +34,7 @@ int lePokemonId(pokemon_struct *pokemon, tipo_struct *tipo){
 
 void listaAtaque(ataque_struct *ataque, int qtd, tipo_struct *tipo){
     for(int i = 0; i < qtd; i++){
-        printf("id:%d\t%s\td:%.2f\tt:%s\te:%.2f\n", 
+        printf("(%d)\t%s, dano:%.2f, tipo:%s, energia:%.2f\n", 
             i + 1, 
             ataque[i].nome,
             ataque[i].dano,
