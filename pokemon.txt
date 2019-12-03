@@ -1,151 +1,151 @@
-Bulbasaur 118 111 357 128 grass poison
-Ivysaur 151 143 449 155 grass poison
-Venusaur 198 189 577 190 grass poison
-Charmander 116 93 327 118 fire null
-Charmeleon 158 126 435 151 fire null
-Charizard 223 173 582 186 fire flying
-Squirtle 94 121 342 127 water null
-Wartortle 126 155 434 153 water null
-Blastoise 171 207 566 188 water null
-Caterpie 55 55 238 128 bug null
-Metapod 45 80 262 137 bug null
-Butterfree 167 137 459 155 bug flying
-Weedle 63 50 233 120 bug poison
-Kakuna 46 75 249 128 bug poison
-Beedrill 169 130 462 163 bug poison
-Pidgey 85 73 278 120 normal flying
-Pidgeotto 117 105 382 160 normal flying
-Pidgeot 166 154 515 195 normal flying
-Rattata 103 70 275 102 normal null
-Raticate 161 139 446 146 normal null
-Spearow 112 60 292 120 normal flying
-Fearow 182 133 478 163 normal flying
-Ekans 110 97 318 111 poison null
-Arbok 167 153 475 155 poison null
-Pikachu 112 96 319 111 electric null
-Raichu 193 151 499 155 electric null
-Sandshrew 126 120 383 137 ground null
-Sandslash 182 175 538 181 ground null
-Nidoran♀ 86 89 321 146 poison null
-Nidorina 117 120 409 172 poison null
-Nidoqueen 180 173 560 207 poison ground
-Nidoran♂ 105 76 311 130 poison null
-Nidorino 137 111 404 156 poison null
-Nidoking 204 156 551 191 poison ground
-Clefairy 107 108 387 172 fairy null
-Clefable 178 162 556 216 fairy null
-Vulpix 96 109 321 116 fire null
-Ninetales 169 190 536 177 fire null
-Jigglypuff 80 41 372 251 normal fairy
-Wigglytuff 156 90 541 295 normal fairy
-Zubat 83 73 276 120 poison flying
-Golbat 161 150 492 181 poison flying
-Oddish 131 112 371 128 grass poison
-Gloom 153 136 444 155 grass poison
-Vileplume 202 167 550 181 grass poison
-Paras 121 99 331 111 bug grass
-Parasect 165 146 466 155 bug grass
-Venonat 100 100 355 155 bug poison
-Venomoth 179 143 494 172 bug poison
-Diglett 109 78 254 67 ground null
-Dugtrio 167 134 412 111 ground null
-Meowth 92 78 290 120 normal null
-Persian 150 136 449 163 normal null
-Psyduck 122 95 354 137 water null
-Golduck 191 162 543 190 water null
-Mankey 148 82 350 120 fighting null
-Primeape 207 138 508 163 fighting null
-Growlithe 136 93 375 146 fire null
-Arcanine 227 166 600 207 fire null
-Poliwag 101 82 303 120 water null
-Poliwhirl 130 123 416 163 water null
-Poliwrath 182 184 573 207 water fighting
-Abra 195 82 370 93 psychic null
-Kadabra 232 117 469 120 psychic null
-Alakazam 271 167 584 146 psychic null
-Machop 137 82 391 172 fighting null
-Machoke 177 125 492 190 fighting null
-Machamp 234 159 600 207 fighting null
-Bellsprout 139 61 337 137 grass poison
-Weepinbell 172 92 427 163 grass poison
-Victreebel 207 135 532 190 grass poison
-Tentacool 97 149 366 120 water poison
-Tentacruel 166 209 565 190 water poison
-Geodude 132 132 384 120 rock ground
-Graveler 164 164 474 146 rock ground
-Golem 211 198 599 190 rock ground
-Ponyta 170 127 434 137 fire null
-Rapidash 207 162 532 163 fire null
-Slowpoke 109 98 414 207 water psychic
-Slowbro 177 180 573 216 water psychic
-Magnemite 165 121 379 93 electric steel
-Magneton 223 169 529 137 electric steel
-Farfetch 124 115 380 141 normal flying
-Doduo 158 83 352 111 normal flying
-Dodrio 218 140 513 155 normal flying
-Seel 85 121 369 163 water null
-Dewgong 139 177 523 207 water ice
-Grimer 135 90 415 190 poison null
-Muk 190 172 595 233 poison null
-Shellder 116 134 352 102 water null
-Cloyster 186 256 579 137 water ice
-Gastly 186 67 355 102 ghost poison
-Haunter 223 107 458 128 ghost poison
-Gengar 261 149 565 155 ghost poison
-Onix 85 232 428 111 rock ground
-Drowzee 89 136 380 155 psychic null
-Hypno 144 193 535 198 psychic null
-Krabby 181 124 407 102 water null
-Kingler 240 181 567 146 water null
-Voltorb 109 111 340 120 electric null
-Electrode 173 173 501 155 electric null
-Exeggcute 107 125 387 155 grass psychic
-Exeggutor 233 149 598 216 grass psychic
-Cubone 90 144 371 137 ground null
-Marowak 144 186 485 155 ground null
-Hitmonlee 224 181 542 137 fighting null
-Hitmonchan 193 197 527 137 fighting null
-Lickitung 108 137 452 207 normal null
-Koffing 119 141 380 120 poison null
-Weezing 174 197 534 163 poison null
-Rhyhorn 140 127 457 190 ground rock
-Rhydon 222 171 626 233 ground rock
-Chansey 60 128 675 487 normal null
-Tangela 183 169 515 163 grass null
-Kangaskhan 181 165 579 233 normal null
-Horsea 129 103 334 102 water null
-Seadra 187 156 489 146 water null
-Goldeen 123 110 361 128 water null
-Seaking 175 147 512 190 water null
-Staryu 137 112 351 102 water null
-Starmie 210 184 549 155 water psychic
-Mr_Mime 192 205 517 120 psychic fairy
-Scyther 218 170 560 172 bug flying
-Jynx 223 151 537 163 ice psychic
-Electabuzz 198 158 519 163 electric null
-Magmar 206 154 523 163 fire null
-Pinsir 238 182 583 163 bug null
-Tauros 198 183 562 181 normal null
-Magikarp 29 85 199 85 water null
-Gyarados 237 186 639 216 water flying
-Lapras 165 174 616 277 water ice
-Ditto 91 91 316 134 normal null
-Eevee 104 114 364 146 normal null
-Vaporeon 205 161 643 277 water null
-Jolteon 232 182 577 163 electric null
-Flareon 246 179 588 163 fire null
-Porygon 153 136 452 163 normal null
-Omanyte 155 153 419 111 rock water
-Omastar 207 201 580 172 rock water
-Kabuto 148 140 390 102 rock water
-Kabutops 220 186 561 155 rock water
-Aerodactyl 221 159 570 190 rock flying
-Snorlax 190 169 689 330 normal null
-Articuno 192 236 635 207 ice flying
-Zapdos 253 185 645 207 electric flying
-Moltres 251 181 639 207 fire flying
-Dratini 119 91 331 121 dragon null
-Dragonair 163 135 454 156 dragon null
-Dragonite 263 198 670 209 dragon flying
-Mewtwo 300 182 696 214 psychic null
-Mew 210 210 645 225 psychic null
+Bulbasaur 118 111 128 grass poison
+Ivysaur 151 143 155 grass poison
+Venusaur 198 189 190 grass poison
+Charmander 116 93 118 fire null
+Charmeleon 158 126 151 fire null
+Charizard 223 173 186 fire flying
+Squirtle 94 121 127 water null
+Wartortle 126 155 153 water null
+Blastoise 171 207 188 water null
+Caterpie 55 55 128 bug null
+Metapod 45 80 137 bug null
+Butterfree 167 137 155 bug flying
+Weedle 63 50 120 bug poison
+Kakuna 46 75 128 bug poison
+Beedrill 169 130 163 bug poison
+Pidgey 85 73 120 normal flying
+Pidgeotto 117 105 160 normal flying
+Pidgeot 166 154 195 normal flying
+Rattata 103 70 102 normal null
+Raticate 161 139 146 normal null
+Spearow 112 60 120 normal flying
+Fearow 182 133 163 normal flying
+Ekans 110 97 111 poison null
+Arbok 167 153 155 poison null
+Pikachu 112 96 111 electric null
+Raichu 193 151 155 electric null
+Sandshrew 126 120 137 ground null
+Sandslash 182 175 181 ground null
+Nidoran♀ 86 89 146 poison null
+Nidorina 117 120 172 poison null
+Nidoqueen 180 173 207 poison ground
+Nidoran♂ 105 76 130 poison null
+Nidorino 137 111 156 poison null
+Nidoking 204 156 191 poison ground
+Clefairy 107 108 172 fairy null
+Clefable 178 162 216 fairy null
+Vulpix 96 109 116 fire null
+Ninetales 169 190 177 fire null
+Jigglypuff 80 41 251 normal fairy
+Wigglytuff 156 90 295 normal fairy
+Zubat 83 73 120 poison flying
+Golbat 161 150 181 poison flying
+Oddish 131 112 128 grass poison
+Gloom 153 136 155 grass poison
+Vileplume 202 167 181 grass poison
+Paras 121 99 111 bug grass
+Parasect 165 146 155 bug grass
+Venonat 100 100 155 bug poison
+Venomoth 179 143 172 bug poison
+Diglett 109 78 67 ground null
+Dugtrio 167 134 111 ground null
+Meowth 92 78 120 normal null
+Persian 150 136 163 normal null
+Psyduck 122 95 137 water null
+Golduck 191 162 190 water null
+Mankey 148 82 120 fighting null
+Primeape 207 138 163 fighting null
+Growlithe 136 93 146 fire null
+Arcanine 227 166 207 fire null
+Poliwag 101 82 120 water null
+Poliwhirl 130 123 163 water null
+Poliwrath 182 184 207 water fighting
+Abra 195 82 93 psychic null
+Kadabra 232 117 120 psychic null
+Alakazam 271 167 146 psychic null
+Machop 137 82 172 fighting null
+Machoke 177 125 190 fighting null
+Machamp 234 159 207 fighting null
+Bellsprout 139 61 137 grass poison
+Weepinbell 172 92 163 grass poison
+Victreebel 207 135 190 grass poison
+Tentacool 97 149 120 water poison
+Tentacruel 166 209 190 water poison
+Geodude 132 132 120 rock ground
+Graveler 164 164 146 rock ground
+Golem 211 198 190 rock ground
+Ponyta 170 127 137 fire null
+Rapidash 207 162 163 fire null
+Slowpoke 109 98 207 water psychic
+Slowbro 177 180 216 water psychic
+Magnemite 165 121 93 electric steel
+Magneton 223 169 137 electric steel
+Farfetch 124 115 141 normal flying
+Doduo 158 83 111 normal flying
+Dodrio 218 140 155 normal flying
+Seel 85 121 163 water null
+Dewgong 139 177 207 water ice
+Grimer 135 90 190 poison null
+Muk 190 172 233 poison null
+Shellder 116 134 102 water null
+Cloyster 186 256 137 water ice
+Gastly 186 67 102 ghost poison
+Haunter 223 107 128 ghost poison
+Gengar 261 149 155 ghost poison
+Onix 85 232 111 rock ground
+Drowzee 89 136 155 psychic null
+Hypno 144 193 198 psychic null
+Krabby 181 124 102 water null
+Kingler 240 181 146 water null
+Voltorb 109 111 120 electric null
+Electrode 173 173 155 electric null
+Exeggcute 107 125 155 grass psychic
+Exeggutor 233 149 216 grass psychic
+Cubone 90 144 137 ground null
+Marowak 144 186 155 ground null
+Hitmonlee 224 181 137 fighting null
+Hitmonchan 193 197 137 fighting null
+Lickitung 108 137 207 normal null
+Koffing 119 141 120 poison null
+Weezing 174 197 163 poison null
+Rhyhorn 140 127 190 ground rock
+Rhydon 222 171 233 ground rock
+Chansey 60 128 487 normal null
+Tangela 183 169 163 grass null
+Kangaskhan 181 165 233 normal null
+Horsea 129 103 102 water null
+Seadra 187 156 146 water null
+Goldeen 123 110 128 water null
+Seaking 175 147 190 water null
+Staryu 137 112 102 water null
+Starmie 210 184 155 water psychic
+Mr_Mime 192 205 120 psychic fairy
+Scyther 218 170 172 bug flying
+Jynx 223 151 163 ice psychic
+Electabuzz 198 158 163 electric null
+Magmar 206 154 163 fire null
+Pinsir 238 182 163 bug null
+Tauros 198 183 181 normal null
+Magikarp 29 85 85 water null
+Gyarados 237 186 216 water flying
+Lapras 165 174 277 water ice
+Ditto 91 91 134 normal null
+Eevee 104 114 146 normal null
+Vaporeon 205 161 277 water null
+Jolteon 232 182 163 electric null
+Flareon 246 179 163 fire null
+Porygon 153 136 163 normal null
+Omanyte 155 153 111 rock water
+Omastar 207 201 172 rock water
+Kabuto 148 140 102 rock water
+Kabutops 220 186 155 rock water
+Aerodactyl 221 159 190 rock flying
+Snorlax 190 169 330 normal null
+Articuno 192 236 207 ice flying
+Zapdos 253 185 207 electric flying
+Moltres 251 181 207 fire flying
+Dratini 119 91 121 dragon null
+Dragonair 163 135 156 dragon null
+Dragonite 263 198 209 dragon flying
+Mewtwo 300 182 214 psychic null
+Mew 210 210 225 psychic null

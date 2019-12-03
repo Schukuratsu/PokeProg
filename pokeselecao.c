@@ -8,12 +8,11 @@ void listaPokemon(pokemon_struct *pokemon, tipo_struct *tipo){
             strcpy(tipo2,tipo[pokemon[i].tipo2].nome);
         else 
             strcpy(tipo2, tipo_null);
-        printf("(%d)\t%s, atk:%.2f, def:%.2f, vel:%.2f, sta:%.2f, tipo1:%s, tipo2:%s\n", 
+        printf("(%d)\t%s, atk:%.2f, def:%.2f, sta:%.2f, tipo1:%s, tipo2:%s\n", 
             i + 1, 
             pokemon[i].nome, 
             pokemon[i].ataque, 
             pokemon[i].defesa, 
-            pokemon[i].velocidade, 
             pokemon[i].stamina, 
             tipo[pokemon[i].tipo1].nome, 
             tipo2
@@ -23,10 +22,10 @@ void listaPokemon(pokemon_struct *pokemon, tipo_struct *tipo){
 
 int lePokemonId(pokemon_struct *pokemon, tipo_struct *tipo){
     int id = -1;
-    listaPokemon(pokemon, tipo);
     while(id < 1 || id > QTD_POKEMON){
-        printf("\nSelecione um pokemon pelo seu ID da pokedex: ");
+        printf("\nSelecione um pokemon pelo seu ID da pokedex (0 para listar): ");
         scanf("%d", &id);
+        if(id == 0) listaPokemon(pokemon, tipo);
     }
     id = id - 1;
     printf("\nPokemon selecionado: %s\n\n", pokemon[id].nome);
@@ -48,10 +47,10 @@ void listaAtaque(ataque_struct *ataque, int qtd, tipo_struct *tipo){
 int leAtaqueRapido(ataque_struct *ataque_rapido, tipo_struct *tipo){
     int id = -1;
     printf("Lista de ataques rapidos:\n");
-    listaAtaque(ataque_rapido, QTD_ATAQUE_RAPIDO, tipo);
     while(id < 1 || id > QTD_ATAQUE_RAPIDO){
         printf("\nSelecione um ataque rapido pelo seu ID: ");
         scanf("%d", &id);
+        if(id == 0) listaAtaque(ataque_rapido, QTD_ATAQUE_RAPIDO, tipo);
     }
     id = id - 1;
     printf("\nAtaque rapido selecionado: %s\n\n", ataque_rapido[id].nome);
@@ -61,10 +60,10 @@ int leAtaqueRapido(ataque_struct *ataque_rapido, tipo_struct *tipo){
 int leAtaqueCarregado(ataque_struct *ataque_carregado, tipo_struct *tipo){
     int id = -1;
     printf("Lista de ataques carregados:\n");
-    listaAtaque(ataque_carregado, QTD_ATAQUE_CARREGADO, tipo);
     while(id < 1 || id > QTD_ATAQUE_CARREGADO){
         printf("\nSelecione um ataque carregado pelo seu ID: ");
         scanf("%d", &id);
+        if(id == 0) listaAtaque(ataque_carregado, QTD_ATAQUE_RAPIDO, tipo);
     }
     id = id - 1;
     printf("\nAtaque carregado selecionado: %s\n\n", ataque_carregado[id].nome);
@@ -84,6 +83,15 @@ float leNivel(){
         scanf("%f", &nivel);
     }
     return nivel;
+}
+
+float leVelocidade(){
+    float velocidade = -1;
+    while(velocidade < 0){
+        printf("Digite a velocidade do pokemon: ");
+        scanf("%f", &velocidade);
+    }
+    return velocidade;
 }
 
 float calculaPS(pokemon_selecionado_struct *pokemon){
@@ -107,6 +115,7 @@ float selecionaPokemon(pokemon_selecionado_struct *poke_sel, pokemon_struct *pok
     pokemon_atc = leAtaqueCarregado(ataque_carregado, tipo);
     poke_sel->ataque_carregado = &ataque_carregado[pokemon_atc];
     poke_sel->nivel = leNivel();
+    poke_sel->velocidade = leVelocidade();
     calculaPS(poke_sel);
 }
 

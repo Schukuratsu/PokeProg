@@ -2,7 +2,7 @@
 
 int verificaPrimeiro(pokemon_selecionado_struct *ps1, pokemon_selecionado_struct *ps2){
     int primeiro;
-    if(ps1->base->velocidade > ps2->base->velocidade){
+    if(ps1->velocidade > ps2->velocidade){
         primeiro = 0;
     }
     else{

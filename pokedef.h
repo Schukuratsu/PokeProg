@@ -54,7 +54,6 @@ struct pokemon_struct
 char nome[TAM_STRING];
 float ataque;
 float defesa;
-float velocidade;
 float stamina;
 int tipo1;
 int tipo2;
@@ -66,8 +65,9 @@ struct pokemon_selecionado_struct
 struct pokemon_struct *base; //pokemon selelcionado
 struct ataque_struct *ataque_rapido; //ataque rapido selecionado
 struct ataque_struct *ataque_carregado; //ataque carregado selecionado
-float ps; //pontos de saude atuais
+float velocidade; //determina qual pokemon atacará primeiro
 float nivel; //nivel do pokemon
+float ps; //pontos de saude atuais
 float energia; //energia do pokemon
 };
 typedef struct pokemon_selecionado_struct pokemon_selecionado_struct;

@@ -104,7 +104,7 @@ int carregaPokemon(pokemon_struct pokemon[QTD_POKEMON], tipo_struct tipo[QTD_TIP
         char tipo1[TAM_STRING], tipo2[TAM_STRING];
         while (!feof(arq)){ // lê linha
             pokemon_struct p;
-            fscanf(arq, "%s %f %f %f %f %s %s", p.nome, &p.ataque, &p.defesa, &p.velocidade, &p.stamina, tipo1, tipo2);
+            fscanf(arq, "%s %f %f %f %s %s", p.nome, &p.ataque, &p.defesa, &p.stamina, tipo1, tipo2);
             p.tipo1 = pegaIdTipo(tipo1, tipo, n, nome_arq);
             p.tipo2 = pegaIdTipo(tipo2, tipo, n, nome_arq);
             // printf("\n%s %.2f %.2f %.2f %.2f %s %d %s %d", p.nome, p.ataque, p.defesa, p.velocidade, p.stamina, tipo1, p.tipo1, tipo2, p.tipo2);
