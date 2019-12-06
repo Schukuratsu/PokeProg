@@ -13,16 +13,16 @@
 #define QTD_TIPO 18
 #define QTD_CLIMA 7
 #define TIPOS_POR_CLIMA 3
-#define QTD_ATAQUE_RAPIDO 30
-#define QTD_ATAQUE_CARREGADO 129
+#define QTD_ATAQUE_RAPIDO 63
+#define QTD_ATAQUE_CARREGADO 144
 #define QTD_POKEMON 151
 // configurações do jogo
 #define QTD_POKEMON_POR_JOGADOR 3
 #define QTD_JOGADOR 2
 #define QTD_ESCUDO 2
-#define NIVEL_PASSO 0.5
 #define NIVEL_MIN 0
 #define NIVEL_MAX 40
+#define NIVEL_PASSO 0.5
 // coisas aleatórias
 #define TAM_STRING 50
 
@@ -42,9 +42,9 @@ typedef struct clima_struct clima_struct;
 
 struct ataque_struct
 {
+int tipo;
 char nome[TAM_STRING];
 float dano;
-int tipo;
 float energia;
 };
 typedef struct ataque_struct ataque_struct;
@@ -57,6 +57,8 @@ float defesa;
 float stamina;
 int tipo1;
 int tipo2;
+int rapido[14];
+int carregado[25];
 };
 typedef struct pokemon_struct pokemon_struct;
 

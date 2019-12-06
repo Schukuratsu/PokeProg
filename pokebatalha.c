@@ -143,7 +143,7 @@ void escreveLogCabecalho(pokemon_selecionado_struct *p_s1, pokemon_selecionado_s
     FILE *arq = fopen(nome_arq, "w+");
     if (arq != NULL){
         fprintf(arq,"turno;atacante;ataque;ps(jogador1);ps(jogador2);energia(jogador1);energia(jogador2)\n");
-        printf("\tturno\tatacante\tataque\tps(jogador1)\tps(jogador2)\tps(jogador1)\tps(jogador2)\n");
+        printf("\tturno\tatacante\tataque\tps(jogador1)\tps(jogador2)\tenergia(jogador1)\tenergia(jogador2)\n");
         fprintf(arq,"0;-;-;%.3f;%.3f;%.3f;%.3f\n", p_s1->ps, p_s2->ps, p_s1->energia, p_s2->energia);
         printf("log: \t0\t-\t\t-\t%.3f\t\t%.3f\t\t%.3f\t\t%.3f\n", p_s1->ps, p_s2->ps, p_s1->energia, p_s2->energia);
         fclose(arq);

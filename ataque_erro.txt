@@ -1,0 +1,54 @@
+Turno do jogador 1 - 'Beedrill' ataca 'Blastoise'.
+(1) nome: poison_Jab    dano base: 3.00 tipo: poison
+Selecione um ataque: 1
+Bonus de tipo!
+O ataque causou 1044539297570408800000000000000000.00 de dano.
+log: 8  Beedrill        poison_Jab      52.600  -1044539297570408800000000000000000.000 522269648785204400000000000000000.000   42051836651055562000000000000000.000
+O pokemon 'Blastoise' desmaiou...
+
+
+
+
+Turno do jogador 1 - 'Mewtwo' ataca 'Blastoise'.
+(1) nome: Psycho_Cut    dano base: 1.50 tipo: psychic
+Selecione um ataque: 1
+Bonus de clima!
+Bonus de tipo!
+O ataque causou 0.00 de dano.
+log: 6  Mewtwo  Psycho_Cut      62.800  198.020 9.000   42051817308242449000000000000000.000
+
+Turno do jogador 2 - 'Blastoise' ataca 'Mewtwo'.
+(1) nome: water_Gun     dano base: 3.00 tipo: water
+(2) nome: Ice_Beam      dano base: 90.00        tipo: ice
+Selecione um ataque: 2
+O ataque causou 42437048336218077000000000.00 de dano.
+log: 7  Blastoise       Ice_Beam        -42437048336218077000000000.000 198.020 9.000   42051836651055562000000000000000.000
+O pokemon 'Mewtwo' desmaiou...
+
+
+
+Turno do jogador 1 - 'Mewtwo' ataca 'Blastoise'.
+(1) nome: Psycho_Cut    dano base: 1.50 tipo: psychic
+Selecione um ataque: 1
+Bonus de clima!
+Bonus de tipo!
+O ataque causou 0.00 de dano.
+log: 4  Mewtwo  Psycho_Cut      62.800  198.020 4.500   42051817308242449000000000000000.000
+
+
+
+
+Turno do jogador 1 - 'Mew' ataca 'Mew'.
+(1) nome: Charge_Beam   dano base: 1.70 tipo: electric
+Selecione um ataque: 1
+O ataque causou 10492131753377126000000.00 de dano.
+log: 1  Mew     Charge_Beam     65.000  -10492131753377126000000.000    5246065876688563100000.000      0.000
+O pokemon 'Mew' desmaiou...
+
+Turno do jogador 2 - 'Blastoise' ataca 'Mew'.
+(1) nome: water_Gun     dano base: 3.00 tipo: water
+Selecione um ataque: 1
+Bonus de tipo!
+O ataque causou 84103634616484897000000000000000.00 de dano.
+log: 2  Blastoise       water_Gun       -84103634616484897000000000000000.000   198.020 5246065876688563100000.000      42051817308242449000000000000000.000
+O pokemon 'Mew' desmaiou...

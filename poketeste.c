@@ -9,3 +9,9 @@ void testePokemon(pokemon_selecionado_struct *p){
 		p->ps
     );
 }
+
+void testeTipo(tipo_struct p[QTD_TIPO]){
+	for(int i = 0; i <= QTD_TIPO; i++){
+		printf("\nidtipo: %d - nometipo: %s",i, p[i].nome);
+	}
+}

@@ -7,7 +7,7 @@
 // carregar lista de ataques carregados
     // padrão: nome,dano,tipo,perda_de_energia //dados base
 // carregar lista de elementos
-    // padrão: normal,fight,flying,poison,ground,rock,bug,ghost,steel,fire,water,grass,electr,psychic,ice,dragon,dark,fairy //dados base
+    // padrão: normal,fight,2 ,poison,ground,rock,bug,ghost,steel,fire,water,grass,electr,psychic,ice,dragon,dark,17 //dados base
 // carregar lista de climas
     // padrão: sunny //dados base
 
@@ -45,6 +45,8 @@ int main(){
     carregaAtaqueRapido(ataque_rapido, tipo);
     carregaAtaqueCarregado(ataque_carregado, tipo);
     carregaPokemon(pokemon, tipo);
+    carregaListaRapido(pokemon);
+    carregaListaCarregado(pokemon);
 	// processo de seleção
 	selecionaPokemons(pokemon_selecionado, pokemon, ataque_rapido, ataque_carregado, clima, tipo);
 	selecionaClima(&clima_selecionado, clima, tipo);

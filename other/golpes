@@ -1,0 +1,207 @@
+Steel    rapido Steel Wing              3.5 2.5
+Steel    rapido Iron Tail               3.0 2.0
+Dragon   rapido Dragon Tail             3.0 3.3
+Water    rapido Waterfall               4.0 2.7
+Rock     rapido Smack Down              4.0 2.7
+Rock     rapido Rock Throw              4.0 2.5
+Fight    rapido Counter                 4.0 3.5
+Grass    rapido Razor Leaf              5.5 2.0
+Ghost    rapido Shadow Claw             3.0 4.0
+Fire     rapido Fire Spin               3.0 3.3
+Poison   rapido Poison Jab              3.0 3.5
+Psychic  rapido Confusion               4.0 3.0
+Fire     rapido Fire Fang               3.5 2.5
+Normal   rapido Scratch                 4.0 2.0
+Dragon   rapido Dragon Breath           4.0 3.0
+Dark     rapido Bite                    4.0 2.0
+Grass    rapido Vine Whip               2.5 4.0
+Normal   rapido Pound                   2.5 2.0
+Flying   rapido Air Slash               3.0 3.0
+Fight    rapido Rock Smash              3.0 2.3
+Steel    rapido Metal Claw              2.5 3.0
+Poison   rapido Acid                    3.0 2.5
+Ice      rapido Frost Breath            3.5 2.5
+Dark     rapido Feint Attack            3.0 3.0
+Psychic  rapido Zen Headbutt            2.7 2.0
+Dark     rapido Snarl                   2.7 3.3
+Psychic  rapido Extrasensory            2.7 3.3
+Ground   rapido Mud-Slap                3.0 2.7
+Fly      rapido Wing Attack             2.5 3.5
+Water    rapido Water Gun               3.0 3.0
+Normal   rapido Tackle                  3.0 2.0
+Dark     rapido Sucker Punch            2.5 3.5
+Bug      rapido Struggle Bug8           3.0 2.7
+Normal   rapido Quick Attack            2.5 3.5
+Fly      rapido Peck                    3.0 2.5
+Fight    rapido Low Kick                2.0 2.5
+Ghost    rapido Lick                    3.0 3.0
+Fight    rapido Karate Chop             2.5 3.5
+Ice      rapido Ice Shard               3.0 3.3
+Normal   rapido Hidden Power8           3.0 2.7
+Fire     rapido Ember                   3.0 3.0
+Normal   rapido Cut                     3.0 2.0
+Steel    rapido Bullet Punch            3.0 3.5
+Bug      rapido Bug Bite                3.0 3.0
+Water    rapido Bubble                  2.7 3.7
+Bug      rapido Infestation             2.0 3.7
+Electric rapido Volt Switch             2.4 2.0
+Electric rapido Spark                   2.0 4.0
+Electric rapido Thunder Shock           1.5 4.5
+Psychic  rapido Psychiccho Cut          1.5 4.5
+Poison   rapido Poison Sting            1.5 3.0
+Ground   rapido Mud Shot                1.5 4.5
+Ghost    rapido Hex                     2.0 3.7
+Bug      rapido Fury Cutter             2.0 4.0
+Electric rapido Charge Beam             1.7 3.7
+Grass    rapido Bullet Seed             1.7 3.7
+Ghost    rapido Astonish                1.7 3.0
+Normal   rapido Take Down               1.7 2.7
+Ice      rapido Powder Snow             2.0 4.0
+Normal   rapido Present                 1.0 4.0
+Normal   rapido Yawn                    0.0 3.0
+Normal   rapido Transform               0.0 0.0
+Water    rapido Splash                  0.0 3.0
+Normal   carregado Wrap                       60 45
+Normal   carregado Hyper Beam                 150 80
+Dark     carregado Dark Pulse                 80 50
+Poison   carregado Sludge                     50 40
+Normal   carregado Vice Grip                  40 40
+Fire     carregado Flame Wheel                60 55
+Bug      carregado Megahorn                   90 55
+Fire     carregado Flamethrower               90 55
+Ground   carregado Dig                        100 80
+Fighting carregado Cross Chop                 50 35
+Psychic  carregado Psybeam                    70 60
+Ground   carregado Earthquake                 120 65
+Rock     carregado Stone Edge                 100 55
+Ice      carregado Ice Punch                  55 40
+Psychic  carregado Heart Stamp                40 40
+Electric carregado Discharge                  65 45
+Steel    carregado Flash Cannon               110 65
+Flying   carregado Drill Peck                 60 40
+Ice      carregado Ice Beam                   90 55
+Ice      carregado Blizzard                   130 75
+Fire     carregado Heat Wave                  95 75
+Flying   carregado Aerial Ace                 55 45
+Ground   carregado Drill Run                  80 55
+Grass    carregado Petal Blizzard             110 65
+Grass    carregado Mega Drain                 25 55
+Bug      carregado Bug Buzz                   90  60
+Poison   carregado Poison Fang                40 35
+Dark     carregado Night Slash                50 40
+Water    carregado Bubble Beam                45 40
+Fighting carregado Submission                 60 50
+Fighting carregado Low Sweep                  40 40
+Water    carregado Aqua Jet                   45 45
+Water    carregado Aqua Tail                  50 35
+Grass    carregado Seed Bomb                  55 40
+Psychic  carregado Psyshock                   70 45
+Rock     carregado Ancient Power              70 45
+Rock     carregado Rock Tomb                  70 60
+Rock     carregado Rock Slide                 80 45
+Rock     carregado Power Gem                  80 60
+Ghost    carregado Shadow Sneak               50 45
+Ghost    carregado Shadow Punch               40 35
+Ghost    carregado Ominous Wind               50 40
+Ghost    carregado Shadow Ball                100 55
+Steel    carregado Magnet Bomb                70 45
+Steel    carregado Iron Head                  70 50
+Electric carregado Parabolic Charge           25 55
+Electric carregado Thunder Punch              55 40
+Electric carregado Thunder                    100 60
+Electric carregado Thunderbolt                90 55
+Dragon   carregado Twister                    45 45
+Dragon   carregado Dragon Pulse               90 60
+Dragon   carregado Dragon Claw                50 35
+Fairy    carregado Disarming Voice            70 45
+Fairy    carregado Draining Kiss              60 55
+Fairy    carregado Dazzling Gleam             110 70
+Fairy    carregado Moonblast                  130 70
+Fairy    carregado Play Rough                 90 60
+Poison   carregado Cross Poison               40 35
+Poison   carregado Sludge Bomb                80 50
+Poison   carregado Sludge Wave                110 65
+Poison   carregado Gunk Shot                  130 75
+Ground   carregado Bone Club                  40 35
+Ground   carregado Bulldoze                   80 60
+Ground   carregado Mud Bomb                   55 40
+Bug      carregado Signal Beam                75 55
+Bug      carregado X-Scissor                  45 35
+Fire     carregado Flame Charge               70 50
+Fire     carregado Flame Burst                70 55
+Fire     carregado Fire Blast                 140 80
+Water    carregado Brine                      60 50
+Water    carregado Water Pulse                70 60
+Water    carregado Scald                      80 60
+Water    carregado Hydro Pump                 130 75
+Psychic  carregado Psychic                    100 70
+Psychic  carregado Psystrike                  100 55
+Ice      carregado Icy Wind                   60 45
+Grass    carregado Giga Drain                 50 80
+Fire     carregado Fire Punch                 55 40
+Grass    carregado Solar Beam                 150 80
+Grass    carregado Leaf Blade                 70 35
+Grass    carregado Power Whip                 90 50
+Flying   carregado Air Cutter                 60  55
+Flying   carregado Hurricane                  110 65
+Fighting carregado Brick Break                40 35
+Normal   carregado Swift                      60 55
+Normal   carregado Horn Attack                40 35
+Normal   carregado Stomp                      55 40
+Normal   carregado Hyper Fang                 80 50
+Normal   carregado Body Slam                  60 35
+Normal   carregado Rest                       50 35
+Normal   carregado Struggle                   35 100
+Water    carregado Scald (Blastoise)          50 80
+Water    carregado Hydro Pump                 90 80
+Normal   carregado Wrap (Green)               25 45
+Normal   carregado Wrap (Pink)                25 45
+Fighting carregado Close Combat               100 60
+Fighting carregado Dynamic Punch              90 50
+Fighting carregado Focus Blast                150 75
+Ice      carregado Aurora Beam                80 60
+Electric carregado Wild Charge                90 50
+Electric carregado Zap Cannon                 150 80
+Ice      carregado Avalanche                  90 45
+Flying   carregado Brave Bird                 90 55
+Flying   carregado Sky Attack                 80 45
+Ground   carregado Sand Tomb                  80 60
+Rock     carregado Rock Blast                 50 40
+Bug      carregado Silver Wind                70 45
+Ghost    carregado Night Shade                60 55
+Steel    carregado Gyro Ball                  80 60
+Steel    carregado Heavy Slam                 70 50
+Fire     carregado Overheat                   150 80
+Grass    carregado Grass Knot                 90 50
+Grass    carregado Energy Ball                90 60
+Psychic  carregado Future Sight               120 65
+Psychic  carregado Mirror Coat                60 55
+Dragon   carregado Outrage                    110 60
+Dark     carregado Crunch                     70 45
+Dark     carregado Foul Play                  70 45
+Water    carregado Surf                       65 40
+Dragon   carregado Draco Meteor               150 75
+Steel    carregado Doom Desire                80 35
+Psychic  carregado Psycho Boost               70 40
+Water    carregado Origin Pulse               130 60
+Ground   carregado Precipice Blades           130 60
+Fire     carregado Weather Ball               60 35
+Ice      carregado Weather Ball               60 35
+Normal   carregado Weather Ball               60 35
+Water    carregado Weather Ball               60 35
+Grass    carregado Frenzy Plant               100 45
+Fire     carregado Blast Burn                 110 50
+Water    carregado Hydro Cannon               90 40
+Normal   carregado Last Resort                90 55
+Steel    carregado Meteor Mash                100 50
+Normal   carregado Skull Bash                 130 75
+Poison   carregado Acid Spray                 20 50
+Ground   carregado Earth Power                90 55
+Water    carregado Crabhammer                 75 50
+Grass    carregado Leaf Tornado               45 40
+Water    carregado Muddy Water                35 35
+Fire     carregado Blaze Kick                 55 40
+Fighting carregado Power-Up Punch             40 35
+Normal   carregado Frustration                10 40
+Normal   carregado Return                     50 40
+Psychic  carregado Synchronoise               80 50
