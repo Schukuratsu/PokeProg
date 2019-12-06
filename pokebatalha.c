@@ -60,7 +60,7 @@ float fatorAleatorio(){
     // retorna valor entre 0.85 e 1.15
     float fator_aleatorio = (float) (rand() % 30000);
     fator_aleatorio /= 100000;
-    fator_aleatorio += 1;
+    fator_aleatorio += 0.85;
     return fator_aleatorio;
 }
 
@@ -108,18 +108,25 @@ int atacaAdversario(ataque_struct *ataque, pokemon_selecionado_struct *pokemon_a
     int carregado;
     int bloqueado;
     // calcula dano
-    dano = 2 * pokemon_ataque->nivel / 5 + 2;
-	dano *= ataque->dano;
-    dano *=  pokemon_ataque->base->ataque;
-    dano /=  pokemon_defesa->base->defesa;
-	dano /= 50;
-	dano += 2;
-	dano *= bonusClima(ataque, clima);
+    // dano = 2 * pokemon_ataque->nivel / 5 + 2;
+    dano = 2;
+    dano = dano * pokemon_ataque->nivel;
+    dano = dano / 5;
+    dano = dano + 2;
+    // dano = dano * ataque->dano * pokemon_ataque->ataque / pokemon_defesa->defesa;
+	dano = dano * ataque->dano;
+    dano = dano * pokemon_ataque->base->ataque;
+    dano = dano / pokemon_defesa->base->defesa;
+    // dano = dano / 50 + 2;
+	dano = dano / 50;
+	dano = dano + 2;
+    // dano = dano * bonusClima(ataque, clima) * fatorAleatorio() * bonusAtaqueMesmoTipo(ataque, pokemon_ataque) * eficaciaTipo(ataque, pokemon_defesa, tipo)
+	dano = dano * bonusClima(ataque, clima);
 	dano *= fatorAleatorio();
 	dano *= bonusAtaqueMesmoTipo(ataque, pokemon_ataque);
 	dano *= eficaciaTipo(ataque, pokemon_defesa, tipo);
 	// aplica dano
-    if(strcmp(ataque->nome, pokemon_ataque->ataque_carregado->nome) == 0 && *escudo > 0){
+    if(ataque == pokemon_ataque->ataque_carregado && *escudo > 0){
         *escudo--;
         pokemon_ataque->energia -= ataque->energia;
         bloqueado = 1;
@@ -127,12 +134,13 @@ int atacaAdversario(ataque_struct *ataque, pokemon_selecionado_struct *pokemon_a
     }else{
         bloqueado = 0;
         pokemon_defesa->ps -= dano;
+        pokemon_defesa->energia += (dano/2);
         printf("O ataque causou %.2f de dano.\n", dano);
         if(ataque == pokemon_ataque->ataque_carregado){
-            pokemon_ataque->energia += (dano / 2) - ataque->energia;
+            pokemon_ataque->energia -= ataque->energia;
         }
         else{
-            pokemon_ataque->energia += (dano / 2) + ataque->energia;
+            pokemon_ataque->energia += ataque->energia;
         }
     }
     return bloqueado;
@@ -180,7 +188,7 @@ void escreveLog(ataque_struct *ataque_selecionado, pokemon_selecionado_struct *p
     return;
 }
 
-void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][QTD_POKEMON_POR_JOGADOR], clima_struct *clima, tipo_struct *tipo){
+void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][QTD_POKEMON_POR_JOGADOR], clima_struct *clima, tipo_struct *tipo, ataque_struct *transform){
     int pokemon_ativo[QTD_JOGADOR] = {0, 0};
     int escudo[QTD_JOGADOR] = {QTD_ESCUDO, QTD_ESCUDO};
     ataque_struct *ataque_selecionado;
@@ -201,6 +209,12 @@ void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][Q
         printf("\nTurno do jogador %d - \'%s\' ataca \'%s\'.", jogador + 1, atacante->base->nome, atacado->base->nome);
         ataque_selecionado = menuAtaque(atacante, tipo);
         bloqueado = atacaAdversario(ataque_selecionado, atacante, atacado, tipo, clima, &escudo[jogador2]);
+        // se ataque for transform
+        if(strcmp(ataque_selecionado->nome, "Transform") == 0){
+            printf("\nO pokemon se transformou no adversario!\n");
+            atacante->ataque_rapido == atacado->ataque_rapido;
+            atacante->ataque_carregado == atacado->ataque_carregado;
+        }
         escudo[jogador2] -= bloqueado; 
         escreveLog(ataque_selecionado, &pokemon_selecionado[0][pokemon_ativo[0]], &pokemon_selecionado[1][pokemon_ativo[1]], jogador, bloqueado, turno);
         ultimo_jogador = jogador;

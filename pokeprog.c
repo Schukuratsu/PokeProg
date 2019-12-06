@@ -47,11 +47,26 @@ int main(){
     carregaPokemon(pokemon, tipo);
     carregaListaRapido(pokemon);
     carregaListaCarregado(pokemon);
+	// // teste
+	// for(int i = 0; i < QTD_TIPO; i++){
+	// 	printf("%d, %s", i, tipo[i].nome);
+	// 	for(int j = 0; j < QTD_TIPO; j++){
+	// 		printf(", %.1f", tipo[i].eficacia[j]);
+	// 	}
+	// 	printf("\n");
+	// }
+	// for(int i = 0; i < QTD_CLIMA; i++){
+	// 	printf("%d, %s", i, clima[i].nome);
+	// 	for(int j = 0; j < 3; j++){
+	// 		printf(", %d", clima[i].tipo[j]);
+	// 	}
+	// 	printf("\n");
+	// }
 	// processo de seleção
 	selecionaPokemons(pokemon_selecionado, pokemon, ataque_rapido, ataque_carregado, clima, tipo);
 	selecionaClima(&clima_selecionado, clima, tipo);
 	// batalha
-	iniciaBatalha(pokemon_selecionado, &clima[clima_selecionado], tipo);
+	iniciaBatalha(pokemon_selecionado, &clima[clima_selecionado], tipo, &ataque_rapido[131]);
 	// // teste
 	// testePokemon(&pokemon_selecionado[0][0]);
 	// espera no fim
