@@ -212,8 +212,11 @@ void iniciaBatalha(pokemon_selecionado_struct pokemon_selecionado[QTD_JOGADOR][Q
         // se ataque for transform
         if(strcmp(ataque_selecionado->nome, "Transform") == 0){
             printf("\nO pokemon se transformou no adversario!\n");
-            atacante->ataque_rapido == atacado->ataque_rapido;
-            atacante->ataque_carregado == atacado->ataque_carregado;
+            ataque_struct *ataq;
+            ataq = pokemon_selecionado[jogador2][pokemon_ativo[jogador]].ataque_rapido;
+            atacante->ataque_rapido = ataq;
+            ataq = pokemon_selecionado[jogador2][pokemon_ativo[jogador]].ataque_carregado;
+            atacante->ataque_carregado = ataq;
         }
         escudo[jogador2] -= bloqueado; 
         escreveLog(ataque_selecionado, &pokemon_selecionado[0][pokemon_ativo[0]], &pokemon_selecionado[1][pokemon_ativo[1]], jogador, bloqueado, turno);
