@@ -100,6 +100,9 @@ float eficaciaTipo(ataque_struct *ataque, pokemon_selecionado_struct *pokemon_de
     else if(eficacia_ataque == 2){
         printf("O golpe foi muito efetivo!\n");
     }
+    else if(eficacia_ataque == 0.25){
+        printf("O golpe foi minimamente efetivo.\n");
+    }
     return eficacia_ataque;
 }
 
