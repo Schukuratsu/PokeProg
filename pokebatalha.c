@@ -84,8 +84,8 @@ float eficaciaTipo(ataque_struct *ataque, pokemon_selecionado_struct *pokemon_de
     int pokemon_defesa_tipo2 = pokemon_defesa->base->tipo2;
     float eficacia_ataque = tipo[ataque_tipo].eficacia[pokemon_defesa_tipo1];
     // printf("\n\n\n%d %d %f \n\n\n",pokemon_defesa_tipo1,pokemon_defesa_tipo2,eficacia_ataque);
-    if(pokemon_defesa_tipo2 != -1){
-        eficacia_ataque *= tipo[ataque_tipo].eficacia[pokemon_defesa_tipo2];
+    if(pokemon_defesa_tipo2 != 18){
+        eficacia_ataque = eficacia_ataque * tipo[ataque_tipo].eficacia[pokemon_defesa_tipo2];
     }
     // printf("\n\n\n%f %f %f \n\n\n",eficacia_ataque,tipo[ataque_tipo].eficacia[pokemon_defesa_tipo1],tipo[ataque_tipo].eficacia[pokemon_defesa_tipo2]);
     if(eficacia_ataque == 0){
@@ -110,21 +110,34 @@ int atacaAdversario(ataque_struct *ataque, pokemon_selecionado_struct *pokemon_a
     // calcula dano
     // dano = 2 * pokemon_ataque->nivel / 5 + 2;
     dano = 2;
+    printf("%.2f\t", dano);
     dano = dano * pokemon_ataque->nivel;
+    printf("%.2f\t", dano);
     dano = dano / 5;
+    printf("%.2f\t", dano);
     dano = dano + 2;
+    printf("%.2f\t", dano);
     // dano = dano * ataque->dano * pokemon_ataque->ataque / pokemon_defesa->defesa;
 	dano = dano * ataque->dano;
+    printf("%.2f\t", dano);
     dano = dano * pokemon_ataque->base->ataque;
+    printf("%.2f\t", dano);
     dano = dano / pokemon_defesa->base->defesa;
+    printf("%.2f\t", dano);
     // dano = dano / 50 + 2;
 	dano = dano / 50;
+    printf("%.2f\t", dano);
 	dano = dano + 2;
+    printf("%.2f\t", dano);
     // dano = dano * bonusClima(ataque, clima) * fatorAleatorio() * bonusAtaqueMesmoTipo(ataque, pokemon_ataque) * eficaciaTipo(ataque, pokemon_defesa, tipo)
 	dano = dano * bonusClima(ataque, clima);
+    printf("%.2f\t", dano);
 	dano *= fatorAleatorio();
+    printf("%.2f\t", dano);
 	dano *= bonusAtaqueMesmoTipo(ataque, pokemon_ataque);
+    printf("%.2f\t", dano);
 	dano *= eficaciaTipo(ataque, pokemon_defesa, tipo);
+    printf("%.2f\t", dano);
 	// aplica dano
     if(ataque == pokemon_ataque->ataque_carregado && *escudo > 0){
         *escudo--;
